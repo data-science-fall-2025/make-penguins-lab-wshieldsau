@@ -1,7 +1,7 @@
 ---
 title: "Penguins Report"
 author: "David Gerard"
-date: "00/00/00"
+date: today
 format: 
   html:
     embed-resources: true

@@ -26,7 +26,7 @@ ggpairs(columns = c("Bill Length (mm)", "Bill Depth (mm)",
 ) +
   theme_bw() +
   theme(strip.background = element_rect(fill = "white")) +
-  scale_color_manual(values = c("#00AFBB", "#E7B800", "#FC4E07")) ->
+  scale_color_manual(values = c("red", "green", "blue")) ->
   pl
 
 png(file = "./output/penguin_pairs.png",
