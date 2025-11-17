@@ -10,10 +10,10 @@ output/penguin_report.html: output/penguin_class.csv analysis/penguin_report.qmd
 	mv ./analysis/penguin_report.html ./output/penguin_report.html
 
 output/penguin_class.csv: analysis/classify_penguins.R
-	$(rexec) $<
+	$(rexec) $< output/classify_penguins.Rout
 
 output/penguin_pairs.png: analysis/plot_penguin.R
-	$(rexec) $<
+	$(rexec) $< output/plot_penguin.Rout
 
 .PHONY: clean
 clean:
